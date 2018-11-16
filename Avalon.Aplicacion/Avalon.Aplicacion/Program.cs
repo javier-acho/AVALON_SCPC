@@ -16,7 +16,10 @@ namespace Avalon.Aplicacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmFormularioPrincipal());
+            frmFormularioPrincipal obj = new frmFormularioPrincipal();
+            if(obj.InicioAutorizado)
+                Application.Run(obj);
+
         }
     }
 }
