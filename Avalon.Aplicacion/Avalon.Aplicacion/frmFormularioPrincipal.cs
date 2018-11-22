@@ -1,4 +1,5 @@
 ﻿using Avalon.Aplicacion.Seguridad;
+using Avalon.BO.Menu;
 using ComponentFactory.Krypton.Toolkit;
 using System;
 using System.Collections.Generic;
@@ -27,6 +28,8 @@ namespace Avalon.Aplicacion
                 if (!reprocesar)
                 {
                     InitializeComponent();
+                    ctrMenu menu = new ctrMenu();
+                    menu.CrearMenu(ref kryptonNavigator1);
                 }
                 return;
             }
@@ -46,44 +49,6 @@ namespace Avalon.Aplicacion
         {
             e.Cancel = false;
             
-        }
-
-        private void frmFormularioPrincipal_Load(object sender, EventArgs e)
-        {
-            KryptonTreeNode nodo = CreateNewItem("Menu1");
-            tvMenu.Nodes.Add(nodo);
-
-            KryptonTreeNode nodoAux1 = CreateNewItem("SubMenu1");
-            nodo.Nodes.Add(nodoAux1);
-
-            KryptonTreeNode nodo1 = CreateNewItem("Menu2");
-            tvMenu.Nodes.Add(nodo1);
-
-            KryptonTreeNode nodo2 = CreateNewItem("Menu3");
-            tvMenu.Nodes.Add(nodo2);
-
-            KryptonTreeNode nodo3 = CreateNewItem("Menu4");
-            tvMenu.Nodes.Add(nodo3);
-
-            KryptonTreeNode nodo4 = CreateNewItem("Menu5");
-            tvMenu.Nodes.Add(nodo4);
-
-            if (tvMenu.SelectedNode == null)
-                tvMenu.SelectedNode = nodo;
-        }
-        private KryptonTreeNode CreateNewItem(string texto)
-        {
-            KryptonTreeNode item = new KryptonTreeNode();
-            item.Text = texto;
-            //item.ImageIndex = _rand.Next(imageList.Images.Count - 1);
-            //item.SelectedImageIndex = item.ImageIndex;
-            return item;
-        }
-
-        private void tvMenu_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
-        {
-            string texto = e.Node.Text;
-            KryptonMessageBox.Show(e.Node.NextNode == null && e.Node.Level != 0 ? "Es Hoja" : "es del menu");
         }
     }
 }
