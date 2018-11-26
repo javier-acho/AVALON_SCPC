@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.buttonSpecAny1 = new ComponentFactory.Krypton.Toolkit.ButtonSpecAny();
             this.kryptonNavigator1 = new ComponentFactory.Krypton.Navigator.KryptonNavigator();
             this.tvMenu = new ComponentFactory.Krypton.Toolkit.KryptonTreeView();
+            this.kryptonManager1 = new ComponentFactory.Krypton.Toolkit.KryptonManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,11 +70,14 @@
             this.Name = "frmFormularioPrincipal";
             this.Text = "frmFormularioPrincipal";
             ((System.ComponentModel.ISupportInitialize)(this.kryptonNavigator1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
         private ComponentFactory.Krypton.Toolkit.ButtonSpecAny buttonSpecAny1;
         private ComponentFactory.Krypton.Navigator.KryptonNavigator kryptonNavigator1;
         private ComponentFactory.Krypton.Toolkit.KryptonTreeView tvMenu;
+        private ComponentFactory.Krypton.Toolkit.KryptonManager kryptonManager1;
     }
 }

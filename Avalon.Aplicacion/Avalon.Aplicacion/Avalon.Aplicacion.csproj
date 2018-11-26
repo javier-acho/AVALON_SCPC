@@ -71,6 +71,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administracion\frmMantBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\frmMantBase.Designer.cs">
+      <DependentUpon>frmMantBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administracion\frmMantConceptos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion\frmMantConceptos.Designer.cs">
+      <DependentUpon>frmMantConceptos.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBase.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +103,12 @@
     <Compile Include="Seguridad\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Administracion\frmMantBase.resx">
+      <DependentUpon>frmMantBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administracion\frmMantConceptos.resx">
+      <DependentUpon>frmMantConceptos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmFormularioPrincipal.resx">
       <DependentUpon>frmFormularioPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +147,15 @@
       <Project>{ff694362-260b-4ccc-ba69-edb83848bccb}</Project>
       <Name>Avalon.DTO</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Avalon.Utiles\Avalon.Utiles.csproj">
+      <Project>{b986378e-c1c1-4c04-a229-c9610a9c681d}</Project>
+      <Name>Avalon.Utiles</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Cobros\" />
+    <Folder Include="Pagos\" />
+    <Folder Include="Reportes y Consultas\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

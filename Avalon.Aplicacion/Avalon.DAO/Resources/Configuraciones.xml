@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuraciones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="http://www.SCCP.com/DAO"
+	>
+  <Configuracion Nombre="Local" Estado="False" IpLocal="192.168.1.3" IpPublico="192.168.1.3" NomBD="SCCP" UserBD="sa" PassBD="javier84++" Ftp="" />
+</Configuraciones>

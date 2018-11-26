@@ -49,6 +49,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Utiles.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -64,6 +65,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MenuItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconApp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoApp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

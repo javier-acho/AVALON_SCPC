@@ -41,7 +41,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="boMenu.cs" />
+    <Compile Include="dtoBase.cs" />
+    <Compile Include="dtoConcepto.cs" />
+    <Compile Include="dtoConexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Avalon.Utiles\Avalon.Utiles.csproj">
+      <Project>{b986378e-c1c1-4c04-a229-c9610a9c681d}</Project>
+      <Name>Avalon.Utiles</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

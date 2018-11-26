@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Avalon.DTO
 {
-    public class boMenu
+    public class boMenu: dtoBase
     {
         public string CodMenu { get; set; }
         public int ImageIndex { get; set; }

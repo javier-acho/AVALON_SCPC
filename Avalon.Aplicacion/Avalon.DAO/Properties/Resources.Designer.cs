@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Avalon.Utiles.Properties {
+namespace Avalon.DAO.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Avalon.Utiles.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Avalon.Utiles.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Avalon.DAO.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,62 +61,18 @@ namespace Avalon.Utiles.Properties {
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        ///   Busca una cadena traducida similar a &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+        ///&lt;Configuraciones xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+        ///	xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;
+        ///	xmlns=&quot;http://www.contaperu.com.pe/dev/framework/&quot;
+        ///	&gt;
+        ///
+        ///&lt;/Configuraciones&gt;
+        ///.
         /// </summary>
-        internal static System.Drawing.Bitmap cross {
+        internal static string Configuraciones {
             get {
-                object obj = ResourceManager.GetObject("cross", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap IconApp {
-            get {
-                object obj = ResourceManager.GetObject("IconApp", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap LogoApp {
-            get {
-                object obj = ResourceManager.GetObject("LogoApp", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap MenuAbierto {
-            get {
-                object obj = ResourceManager.GetObject("MenuAbierto", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap MenuCerrado {
-            get {
-                object obj = ResourceManager.GetObject("MenuCerrado", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap MenuItem {
-            get {
-                object obj = ResourceManager.GetObject("MenuItem", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("Configuraciones", resourceCulture);
             }
         }
     }
